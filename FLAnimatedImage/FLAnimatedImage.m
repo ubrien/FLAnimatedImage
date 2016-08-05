@@ -209,6 +209,8 @@ static NSHashTable *allAnimatedImagesWeak;
             return nil;
         }
         
+        return nil;
+        
         // Early return if not GIF!
         CFStringRef imageSourceContainerType = CGImageSourceGetType(_imageSource);
         BOOL isGIFData = UTTypeConformsTo(imageSourceContainerType, kUTTypeGIF);
